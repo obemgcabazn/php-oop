@@ -1,6 +1,5 @@
 <?php
 
-
 class ShopProductWriter {
     private $title;
     private $name;
