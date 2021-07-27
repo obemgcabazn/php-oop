@@ -15,9 +15,8 @@ ini_set('display_errors', '1');
 <div>
   <?php
     require 'StaticExample.php';
-    StaticExample::sayHello();
+    echo AnotherStatic::sayHello();
     echo "<br>";
-    echo StaticExample::$aNum;
   ?>
 </div>
 </body>

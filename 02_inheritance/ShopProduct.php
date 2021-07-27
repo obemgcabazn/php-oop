@@ -23,7 +23,7 @@ class ShopProduct {
     return $this->producerFirstName . " " . $this->producerLastName;
   }
 
-  public function getSummaryLine(){
+  public function getSummaryLine() : string {
     return "\"{$this->title}\" ( {$this->producerFirstName}, {$this->producerLastName} )";
   }
 }

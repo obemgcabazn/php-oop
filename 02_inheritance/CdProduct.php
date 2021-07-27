@@ -15,9 +15,9 @@ class CdProduct extends ShopProduct {
     $this->playLength = $playLength;
   }
 
-  public function getSummaryLine() {
+  public function getSummaryLine(): string {
     $str = parent::getSummaryLine();
-     $str .= " : Время звучания - {$this->playLength}";
+    $str .= " : Время звучания - {$this->playLength}";
     return $str;
   }
 }
