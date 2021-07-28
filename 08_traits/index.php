@@ -12,6 +12,7 @@ require 'Product.php';
 <head>
   <meta charset="UTF-8">
   <title>Трейты</title>
+  <link rel="stylesheet" href="./../style.css">
 </head>
 <body>
 <div>

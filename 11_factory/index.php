@@ -8,9 +8,10 @@ require 'Person.php';
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="./../style.css">
   <title>Абстрактная фабрика</title>
 </head>
 <body>

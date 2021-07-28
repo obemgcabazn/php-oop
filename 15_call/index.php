@@ -1,7 +1,7 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_startup_errors', 1);
-ini_set('display_errors', '1');
+error_reporting( E_ALL );
+ini_set( 'display_startup_errors', 1 );
+ini_set( 'display_errors', '1' );
 
 require 'Person.php';
 require 'PersonWriter.php';
@@ -17,7 +17,7 @@ require 'PersonWriter.php';
 <body>
 <div>
   <?php
-  $a = new Person( "Alex", 32, new PersonWriter());
+  $a = new Person( "Alex", 32, new PersonWriter() );
 
   echo $a->writeAge();
   ?>
