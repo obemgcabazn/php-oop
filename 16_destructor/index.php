@@ -4,8 +4,7 @@ ini_set( 'display_errors', 1 );
 
 require './../assets/print_function.php';
 
-require 'ProcessSale.php';
-require 'Product.php';
+require 'Person.php';
 ?>
 
 <!doctype html>
@@ -17,18 +16,12 @@ require 'Product.php';
 </head>
 <body>
 <div>
-    <h1>toString</h1>
+    <h1>desctructor</h1>
 
     <?php
-    $p = new Product( "Туфли", 3.50 );
-    $logger = function ( Product $product ) {
-        echo "Записать {$product->name}";
-    };
-    $processor = new ProcessSale();
-    $processor->add_action( $logger );
-
-    $processor->do_action( $p );
-
+    $p = new Person( "Alex", 33 );
+    $p->setId(1);
+    unset($p);
     ?>
 </div>
 </body>

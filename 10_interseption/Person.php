@@ -18,7 +18,8 @@ class Person {
     $method = "get{$prop}";
 
     if( method_exists( $this, $method ) ) {
-      return $this->$method();
+
+        return $this->$method();
     }
   }
 
