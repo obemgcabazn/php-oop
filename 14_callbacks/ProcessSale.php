@@ -15,7 +15,7 @@ class ProcessSale {
   }
 
   public function do_action( Product $product ){
-    echo_br( "{$product->name}: обрабатывается..." );
+    echo_br( "{$product->name}: обрабатывается...<br>" );
     foreach( $this->callbacks as $callback ) {
       call_user_func( $callback, $product );
     }
