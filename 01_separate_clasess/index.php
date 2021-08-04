@@ -15,22 +15,20 @@ require( 'ShopProductWriter.php' );
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="./../style.css">
 </head>
 <body>
 <div>
   <?php
-  $a = new ShopProduct( 'Записки молодого врача', "Михаил", "Булгаков", "300" );
+  $a = new separate_class\shopproduct\ShopProduct( 'Записки молодого врача', "Михаил", "Булгаков", "300" );
 
   /*
    * Мы установили ограничение в конструкторе ShopProductWriter
    * __construct( ShopProduct $a )
    * чтобы передавать туда только объекты класса ShopProduct
    */
-  $b = new ShopProductWriter( $a );
+  $b = new separate_class\writer\ShopProductWriter( $a );
 
   echo $b->write();
   ?>

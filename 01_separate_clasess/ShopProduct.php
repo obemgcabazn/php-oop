@@ -1,5 +1,7 @@
 <?php
 
+namespace separate_class\shopproduct;
+
 class ShopProduct {
   private $title;
   private $name;

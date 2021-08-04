@@ -1,5 +1,10 @@
 <?php
 
+namespace separate_class\writer;
+
+// Поиск namespace при использовании use начинается с глобального, поэтому не нужно ставить впереди косую черту
+use separate_class\shopproduct\ShopProduct;
+
 class ShopProductWriter {
     private $title;
     private $name;
