@@ -1,5 +1,7 @@
 <?php
 
+namespace interfaces;
+
 interface Chargeble {
   public function getPrice(): float;
 }

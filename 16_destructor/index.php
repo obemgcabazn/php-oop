@@ -19,7 +19,7 @@ require 'Person.php';
     <h1>desctructor</h1>
 
     <?php
-    $p = new Person( "Alex", 33 );
+    $p = new destructors\Person( "Alex", 33 );
     $p->setId(1);
     unset($p);
     ?>

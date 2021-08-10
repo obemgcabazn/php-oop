@@ -21,18 +21,18 @@ require 'Mailer.php';
     <h1>toString</h1>
 
     <?php
-    $p = new Product( "Туфли", 3.50 );
-    $logger = function ( Product $product ) {
+    $p = new callbacks\Product( "Туфли", 3.50 );
+    $logger = function ( callbacks\Product $product ) {
         echo "Записать {$product->name} <br>";
     };
-    $processor = new ProcessSale();
+    $processor = new callbacks\ProcessSale();
     $processor->add_action( $logger );
 
     // в call_user_func([ '', '' ]) можно передать массив, либо
     // call_user_func(array($classname, 'say_hello'));
     // call_user_func($classname .'::say_hello'); // Начиная с версии 5.2.3
 
-    $processor->add_action([new Mailer(), "doMailer"]);
+    $processor->add_action([new callbacks\Mailer(), "doMailer"]);
 
     $processor->do_action( $p );
 

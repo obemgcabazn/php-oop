@@ -1,5 +1,7 @@
 <?php
 
+namespace delegatemethod;
+
 
 class PersonWriter {
   public function writeName( Person $p ) {

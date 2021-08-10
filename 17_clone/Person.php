@@ -1,5 +1,6 @@
 <?php
 
+namespace cloning;
 
 class Person {
     protected $name;

@@ -1,5 +1,6 @@
 <?php
 
+namespace destructors;
 
 class Person {
     protected $name;

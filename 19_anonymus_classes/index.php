@@ -21,10 +21,10 @@ require 'Person.php';
 <p>Поэтому используем интерфейс и соответствующую сигнатуру</p>
 <div>
     <?php
-    $a = new Person();
+    $a = new anonymousclasses\Person();
     $a->output(
-        new class implements PersonWriter {
-            public function write( Person $person ) {
+        new class implements anonymousclasses\PersonWriter {
+            public function write( anonymousclasses\Person $person ) {
                 echo "Имя: " . $person->getName() . ", возраст: " . $person->getAge();
             }
         } );

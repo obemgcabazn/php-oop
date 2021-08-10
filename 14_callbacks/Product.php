@@ -1,5 +1,6 @@
 <?php
 
+namespace callbacks;
 
 class Product {
   public $name;

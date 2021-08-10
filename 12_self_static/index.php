@@ -19,7 +19,7 @@ require 'DomainObject.php';
   <h1>Позднее статическое связывание</h1>
 
   <?php
-    $a = Document::create();
+    $a = selfstatic\Document::create();
     var_dump_pre($a);
   ?>
 </div>

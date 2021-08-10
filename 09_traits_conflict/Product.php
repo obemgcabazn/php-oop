@@ -1,5 +1,7 @@
 <?php
 
+namespace traitsconflict;
+
 require 'traits.php';
 
 abstract class Product {

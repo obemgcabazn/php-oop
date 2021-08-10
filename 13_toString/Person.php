@@ -1,5 +1,6 @@
 <?php
 
+namespace tostringmethod;
 
 class Person {
   private $name;

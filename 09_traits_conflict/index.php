@@ -19,14 +19,14 @@ require 'Product.php';
   <h1>Конфликты в Трейтах</h1>
   <?php
 
-  $a = new Table( "Table", 9000 );
+  $a = new traitsconflict\Table( "Table", 9000 );
   echo_br( $a->getPrice() );
 
   // так вызвать не получиться, потому что метод объявлен как private
   // echo_br(TaxTool::calculateTax(500));
 
   // такой вызов получится, потмоу что переопределены права доступа в классе
-  echo_br(Table::calculateTax(500));
+  echo_br(traitsconflict\Table::calculateTax(500));
 
   // Все вызовы будут работать, в том числе через экземпляр класса
   echo_br($a::calculateTax(500));

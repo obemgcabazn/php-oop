@@ -20,12 +20,12 @@ require 'Totalizer.php';
 <div>
     <h1>Замыкания</h1>
     <?php
-    $a = new Product( "Туфли", 20 );
-    $b = new Product( "Джинсы", 30);
+    $a = new closures\Product( "Туфли", 20 );
+    $b = new closures\Product( "Джинсы", 30 );
 
 
-    $processor = new ProcessSale();
-    $processor->add_action( Totalizer::warnAmmount( 30 ) );
+    $processor = new closures\ProcessSale();
+    $processor->add_action( closures\Totalizer::warnAmmount( 30 ) );
     $processor->do_action( $a );
     $processor->do_action( $b );
     ?>
@@ -34,9 +34,9 @@ require 'Totalizer.php';
 
     <?php
 
-    $newProcessor = new ProcessSale();
-    $newProcessor->add_action(Totalizer::warnAmmount(20));
-    $newProcessor->do_action($b);
+    $newProcessor = new closures\ProcessSale();
+    $newProcessor->add_action( closures\Totalizer::warnAmmount( 20 ) );
+    $newProcessor->do_action( $b );
     ?>
 </div>
 </body>

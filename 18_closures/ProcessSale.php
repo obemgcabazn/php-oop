@@ -1,8 +1,6 @@
 <?php
 
-/*
- * Мы можем вешать
- */
+namespace closures;
 
 class ProcessSale {
     private $callbacks;

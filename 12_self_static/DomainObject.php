@@ -1,5 +1,6 @@
 <?php
 
+namespace selfstatic;
 
 abstract class DomainObject {
   public static function create(): DomainObject {

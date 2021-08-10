@@ -19,14 +19,14 @@ require 'Product.php';
   <h1>Трейты</h1>
 
   <?php
-  $a = new Product( "Table", 15 );
+  $a = new traits\Product( "Table", 15 );
   echo_br( $a->calcTax( 9000 ) );
 
-  echo_br( ProductWriter::write( $a ) );
+  echo_br( traits\ProductWriter::write( $a ) );
 
   // Argument 1 passed to ProductWriter::write() must implement interface PriceUtilitiesInt
-  $b = new OtherProduct( "Car" );
-  echo_br( ProductWriter::write( $b ) );
+  $b = new traits\OtherProduct( "Car" );
+  echo_br( traits\ProductWriter::write( $b ) );
 
   ?>
 </div>

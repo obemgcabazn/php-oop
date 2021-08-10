@@ -1,5 +1,7 @@
 <?php
 
+namespace traitsconflict;
+
 // Трейты могут реализовывать методы с одинаковыми именами
 trait TaxTool {
   private static $taxrate = 17;

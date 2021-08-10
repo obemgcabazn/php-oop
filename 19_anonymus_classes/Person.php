@@ -1,5 +1,6 @@
 <?php
 
+namespace anonymousclasses;
 
 class Person {
     public function output(PersonWriter $writer){

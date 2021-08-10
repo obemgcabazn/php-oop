@@ -24,7 +24,7 @@ require 'Person.php';
     <p>Для этого используется метод __clone()</p>
 
     <?php
-    $p = new Person( "Alex", 33, new Account( 200 ) );
+    $p = new cloning\Person( "Alex", 33, new cloning\Account( 200 ) );
     $p->setId( 1 );
 
     $a = clone $p;

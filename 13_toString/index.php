@@ -19,7 +19,7 @@ require 'Person.php';
   <h1>toString</h1>
 
   <?php
-  $p = new Person( "Alex" );
+  $p = new tostringmethod\Person( "Alex" );
 
   // Автоматически сработает метод __toString()
   echo $p;

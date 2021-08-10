@@ -11,6 +11,7 @@ require 'Product.php';
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+    <link rel="stylesheet" href="./../style.css">
   <title>Абстрактные классы</title>
 </head>
 <body>
@@ -19,10 +20,10 @@ require 'Product.php';
   <?php
 
   // Используем статический метод build для создания объектов
-  $a = ProductFactory::build("table", "123sku", "Monarch");
+  $a = abstractclass\ProductFactory::build("table", "123sku", "Monarch");
   echo_br($a->getName() . " - это " . $a->getType() );
 
-  $b = ProductFactory::build("Chair", "321sku", "President");
+  $b = abstractclass\ProductFactory::build("Chair", "321sku", "President");
   echo_br($b->getName() . " - это " . $b->getType() );
 
   /*

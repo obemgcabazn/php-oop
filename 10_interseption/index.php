@@ -19,7 +19,7 @@ require 'Person.php';
   <h1>Методы Перехватчики</h1>
 
   <?php
-    $p = new Person( "Alex" );
+    $p = new interseptions\Person( "Alex" );
     echo_br( $p->name );
     $p->name = "Gunter";
     echo_br( $p->name );

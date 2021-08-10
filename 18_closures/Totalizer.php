@@ -1,5 +1,6 @@
 <?php
 
+namespace closures;
 
 class Totalizer {
     public static function warnAmmount($amt){

@@ -1,5 +1,7 @@
 <?php
 
+namespace cloning;
+
 
 class Account {
     public $balance;
