@@ -25,7 +25,7 @@ require 'Totalizer.php';
 
 
     $processor = new ProcessSale();
-    $processor->add_action( Totalizer::warnAmmount( 1 ) );
+    $processor->add_action( Totalizer::warnAmmount( 30 ) );
     $processor->do_action( $a );
     $processor->do_action( $b );
     ?>
@@ -35,7 +35,7 @@ require 'Totalizer.php';
     <?php
 
     $newProcessor = new ProcessSale();
-    $newProcessor->add_action(Totalizer::warnAmmount(2));
+    $newProcessor->add_action(Totalizer::warnAmmount(20));
     $newProcessor->do_action($b);
     ?>
 </div>

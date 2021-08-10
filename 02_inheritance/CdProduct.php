@@ -1,5 +1,8 @@
 <?php
+namespace inheritance\cdproduct;
+
 require 'ShopProduct.php';
+use inheritance\shopproduct\ShopProduct;
 
 class CdProduct extends ShopProduct {
   protected $playLength;

@@ -17,7 +17,7 @@ ini_set('display_errors', '1');
   <?php
   require 'CdProduct.php';
 
-  $a = new CdProduct(
+  $a = new \inheritance\cdproduct\CdProduct(
     "Empty Walls",
     "Serge",
     "Tankian",

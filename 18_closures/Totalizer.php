@@ -1,7 +1,5 @@
 <?php
 
-// & перед $count означает, что она передается по ссылке
-// use отвечает за наследование переменных из родительской области видимости
 
 class Totalizer {
     public static function warnAmmount($amt){
@@ -9,6 +7,9 @@ class Totalizer {
         return function(Product $product) use ($amt, &$count) {
             $count += $product->price;
             echo_br( "Сумма покупки: $count" );
+            if($count > $amt ){
+              echo "Достаточно<br>";
+            }
         };
     }
 }

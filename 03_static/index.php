@@ -16,7 +16,6 @@ require 'StaticExample.php';
 <div>
   <?php
     echo AnotherStatic::sayHello();
-    echo "<br>";
   ?>
 </div>
 </body>

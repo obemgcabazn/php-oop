@@ -1,4 +1,5 @@
 <?php
+namespace inheritance\shopproduct;
 
 
 class ShopProduct {
